@@ -1,0 +1,14 @@
+img{
+    background: url("./public/train.jpg");
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
