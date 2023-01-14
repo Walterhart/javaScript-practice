@@ -1,6 +1,7 @@
 body{
     background-repeat: no-repeat;
     background-size:cover ;
+    background: fixed;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     text-align: center;
