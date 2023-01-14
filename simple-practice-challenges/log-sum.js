@@ -1,5 +1,6 @@
 // Create a function that logs out the sum of all the lap times
 
+// note: let variable block scopes
 function logSum(lap1,lap2,lap3){
     let totalLap= lap1+lap2+lap3
     console.log(totalLap)
