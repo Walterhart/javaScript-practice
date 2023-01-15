@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/passenger-counter-app/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <title>Passenger</title>
+    
 
 </head>
 <body>
-    <h1> People counter:</h1>
-    <h2 id="counter">0</h2>
-    <button id="increment-btn" onclick="increment()">Increment</button>
-    <button id="decrement-btn" onclick="decrement()">Decrement</button>
-    <button id="reset-btn" onclick="reset()">reset</button>
-    <button id="save-btn" onclick="save()">Save</button>
-    <script src="/passenger-counter-app/index.js"></script>
-    
+    <div id="box">
+        <h1> Passenger counter:</h1>
+        <h2 id="counter">0</h2>
+        <button id="increment-btn" onclick="increment()">Increment</button>
+        <button id="decrement-btn" onclick="decrement()">Decrement</button>
+        <button id="reset-btn" onclick="reset()">reset</button>
+        <button id="save-btn" onclick="save()">Save</button>
+        <br>
+        <p id = "prev-enter"> Previous entries: </p>
+        <script src="/passenger-counter-app/index.js"></script>
+    </div>
 </body>
 </html>

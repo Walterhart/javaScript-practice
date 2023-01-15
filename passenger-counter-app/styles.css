@@ -1,35 +1,49 @@
 body{
+    background: url("./public/train4.gif");
     background-repeat: no-repeat;
-    background-size:cover ;
-    background: fixed;
-    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+    font-family:"Press Start 2P", 'Courier New', Courier, monospace;
     font-weight: bold;
+    color: white;
     text-align: center;
-    ;
+    background-attachment: fixed;
+    
+
 }
 
+#box {
+    font-family:"Press Start 2P", 'Courier New', Courier, monospace;
+}
 h1{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 300px ;
 }
 
 
 #counter{
     text-align: center;
-    
 }
 
 button{
     border-radius: 10px;
     height: 50px;
     width: 200px;
+    font-family:"Press Start 2P", 'Courier New', Courier, monospace;
 }
 #increment-btn{
     background-color: darkgreen;
     color: white;
 }
 #decrement-btn{
+    background-color: rgb(25, 0, 139);
+    color: white;
+}
+#reset-btn{
     background-color: darkred;
     color: white;
+}
+#save-btn{
+    background-color: grey;
+ 
 }
 
