@@ -1,0 +1,23 @@
+body{
+
+    background:  url("./public/table2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    font-family:"Press Start 2P", 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    font-size: bold;
+}
+
+
+
+h1{
+    color: gold;
+}
+h3{
+   font-style: italic;
+}
+p{
+   
+}

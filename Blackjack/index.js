@@ -7,20 +7,20 @@ let  hasBlackJack = false
 let isAlive = true
 let msg = ""
 
-msg = "logging out"
 console.log(firstCard + " + " + secondCard)
 console.log("Total:" + sum)
 
 if( sum < 21){
     console.log("Draw another card?")
+    msg = "Draw another card?"
 
 }
 else if (sum === 21){
-    console.log("You win")
+    msg = "You win"
     hasBlackJack = true;
 }
 else {
-    console.log("Burst, you lost")
+    msg ="Burst, you lost"
     isAlive = false
 }
 
