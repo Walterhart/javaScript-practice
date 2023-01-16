@@ -11,8 +11,6 @@ body{
     font-size: bold;
 }
 
-
-
 h1{
     color: goldenrod;
     margin-top: 100px;
@@ -35,7 +33,6 @@ p{
 
 .pixel {
     font-size: 25px;
-    color: white;
     height: auto;
     margin: 10px;
     font-family: 'VT323';
