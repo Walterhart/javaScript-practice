@@ -7,16 +7,20 @@ let  hasBlackJack = false
 let isAlive = true
 let msg = ""
 let messengerEl = document.getElementById("messenger-el") 
-//let sumMsg = document.getElementById("sum-el")
 
 // need to use # for id
 // querySelector: question css selector
 let sumMsg = document.querySelector("#sum-el")
+let cardsMSG = document.querySelector("#cards-el")
+
 function startGame(){
+  renderGame()
+}
+function renderGame(){
 
-    console.log(firstCard + " + " + secondCard)
-    console.log("Total:" + sum)
 
+    cardsMSG.textContent = "Cards: " + firstCard + "," +  secondCard
+    sumMsg.textContent = "Sum: " + sum
     if( sum < 21){
         console.log("Draw another card?")
         msg = "Draw another card?"
@@ -31,13 +35,18 @@ function startGame(){
         isAlive = false
     }
     //starterMSG.textContent = msg
-    console.log(isAlive)
-    console.log(msg)
-    sumMsg.textContent = "Sum: " + sum
+
     messengerEl.textContent = msg
+    console.log("game started")
 
 }
 
-startGame()
+function newCard(){
+    let nextCard = 1
+    sum += nextCard
+    
+    renderGame()
+}
 
-console.log(messengerEl)
+
+
