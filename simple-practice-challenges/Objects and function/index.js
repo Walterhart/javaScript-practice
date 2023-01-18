@@ -2,9 +2,9 @@
 // Use yourself as an example to set the values for name, age, and country
 
 let person ={
-    name: "Wally",
+    name: "Per",
     age: 26,
-    country: "US",
+    country: "Norway",
 }
 // Create a function, logData(), that uses the person object to create a
 // string in the following format: 
