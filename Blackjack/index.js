@@ -20,7 +20,11 @@ function startGame(){
 function renderGame(){
 
 
-    cardsMSG.textContent = "Cards: " + cards[0] + "," + cards[1]
+    cardsMSG.textContent = "Cards: " 
+    for(i = 0; i < cards.length; i++){
+        cardsMSG.textContent += cards[i] + " "
+    }
+
     sumMsg.textContent = "Sum: " + sum
     if( sum < 21){
         console.log("Draw another card?")
