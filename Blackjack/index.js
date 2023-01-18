@@ -22,6 +22,7 @@ let player = {
 
 let playerEl = document.getElementById("player-cash-el")
 playerEl.textContent = player.name + ": " + player.cash
+
 function startGame(){
     isAlive = true
     let firstCard = getRandomCard()
