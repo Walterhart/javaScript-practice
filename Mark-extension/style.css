@@ -1,0 +1,33 @@
+:root {
+    /*color*/
+    --skyblue: skyblue;
+    --white: white;
+    --radius: 3px;
+    --padding: 10px;
+    --margin: 3px;
+}
+
+body{
+    margin:0;
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+}
+button{
+   
+    background-color: var(--skyblue);
+    /*Take up all avaible space in content*/
+    color: var(--white);
+    padding: var(--padding) 20px;
+    border: none;
+    margin-top: var(--margin);
+    font-weight: bold;
+
+}
+#input-el{
+    width: 100%;
+    border: 1px solid var(--skyblue);
+    padding: var(--padding);
+    /*Doesnt overfill input*/
+    box-sizing: border-box;
+    
+}
