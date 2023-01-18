@@ -44,9 +44,9 @@ function renderGame(){
 
 function newCard(){
     let nextCard = 1
-   
     sum += nextCard
-    
+    cards.push(nextCard)
+    console.log(cards)
     renderGame()
 }
 
