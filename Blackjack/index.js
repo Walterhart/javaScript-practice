@@ -1,11 +1,10 @@
 
 
-let firstCard = 10 
-let secondCard = 11
-let cards = [firstCard, secondCard]
-let sum = firstCard + secondCard 
+
+let cards = []
+let sum = 0
 let  hasBlackJack = false
-let isAlive = true
+let isAlive = false
 let msg = ""
 let messengerEl = document.getElementById("messenger-el") 
 
@@ -15,7 +14,12 @@ let sumMsg = document.querySelector("#sum-el")
 let cardsMSG = document.querySelector("#cards-el")
 
 function startGame(){
-  renderGame()
+    isAlive = true
+    let firstCard = getRandomCard()
+    let secondCard = getRandomCard()
+    cards.push(firstCard, secondCard)
+    sum = firstCard + secondCard 
+    renderGame()
 }
 function renderGame(){
 
@@ -27,7 +31,6 @@ function renderGame(){
 
     sumMsg.textContent = "Sum: " + sum
     if( sum < 21){
-        console.log("Draw another card?")
         msg = "Draw another card?"
 
     }
@@ -42,16 +45,40 @@ function renderGame(){
     //starterMSG.textContent = msg
 
     messengerEl.textContent = msg
-    console.log("game started")
-
 }
 
 function newCard(){
-    let nextCard = 1
-    sum += nextCard
-    cards.push(nextCard)
-    console.log(cards)
-    renderGame()
+    if(isAlive === true && hasBlackJack === false )
+    {
+        let nextCard = getRandomCard()
+        sum += nextCard
+        cards.push(nextCard)
+        console.log(cards)
+        renderGame()
+    }
+    
+    
+}
+
+function getRandomCard(){
+    let randomeCard = Math.floor(Math.random() * 13) + 1
+    console.log(randomeCard)
+    if(randomeCard === 1)
+    {
+        return 11
+    }
+    else if(randomeCard === 11 || randomeCard === 12|| randomeCard === 13)
+    {
+        return 10
+    }
+    else
+    {
+        return randomeCard
+
+    }
+
+   
+    
 }
 
 
