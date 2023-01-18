@@ -13,6 +13,15 @@ let messengerEl = document.getElementById("messenger-el")
 let sumMsg = document.querySelector("#sum-el")
 let cardsMSG = document.querySelector("#cards-el")
 
+//  player object
+let player = {
+    name :  "Cash",
+    cash: 145
+
+}
+
+let playerEl = document.getElementById("player-cash-el")
+playerEl.textContent = player.name + ": " + player.cash
 function startGame(){
     isAlive = true
     let firstCard = getRandomCard()
