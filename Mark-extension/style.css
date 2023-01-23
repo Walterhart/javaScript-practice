@@ -11,6 +11,7 @@ body{
     margin:0;
     padding: 10px;
     font-family: 'Kanit', sans-serif;
+    min-width: 400px;
 }
 button{
    
